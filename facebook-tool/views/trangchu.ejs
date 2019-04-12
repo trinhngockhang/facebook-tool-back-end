@@ -1,0 +1,875 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Khang Khang </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="js/control.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body style="overflow: auto;">
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Pacman Game</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-block w-100 block-sort" src="images/pacmanlv.png" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100 block-sort" src="images/pacmanmap1.jpg" alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100 block-sort" src="images/pacman.png" alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                          <p>
+                              This game is a project at school and get mark A+.It only use standard libary in java.
+                          </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="modal fade" id="Dbmodal" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Phone store management</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                              <li data-target="#carouselExampleIndicators4" data-slide-to="3"></li>
+                              <li data-target="#carouselExampleIndicators4" data-slide-to="4"></li>
+                              <li data-target="#carouselExampleIndicators4" data-slide-to="5"></li>
+                              <li data-target="#carouselExampleIndicators4" data-slide-to="6"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/home2Db.png" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="images/pic3Db.png" alt="Second slide" style = "height:280px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="images/pic4Db.png" alt="Third slide" style = "height:280px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="images/pic5Db.png" alt="Fourth slide" style = "height:280px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="images/Pic6Db.png" alt="Fifth slide" style = "height:280px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="images/Pic7Db.png" alt="Sixth slide" style = "height:280px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="images/Pic8Db.png" alt="Seventh slide" style = "height:280px;">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                          <p>
+                              Save and change information about employees, products, customers.
+                              Moreover,it can statistic the business of store and illustrate by charts.
+                              And if you want excel file,it can export data you want.
+                          </p>
+                        </br>
+                        <p>Check it out with account: khangboss, pass:123456</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="modal fade" id="Lismodal" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">English listening</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/menuLis.png" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="images/Lis2.png" alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="images/Lis3.png" alt="Third slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="images/Lis4.png" alt="Fourth slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="images/Lis5.png" alt="Fifth slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                          <p>
+                            Test your listening skill by level,save the score and show it by chart.
+                          </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Size of brain</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/oT9ZikhljM0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </div>
+                            </div>
+                          </div>
+                          <p>
+                             It's a funny game which got second prize at Techkids web 6 mini hackathon.
+                          </p>
+                          <p>
+                              Technology:Phaser.
+                          </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Drop it</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-block w-100 block-sort" src="images/loadbird.PNG" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100 block-sort" src="images/bird.PNG" alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100 block-sort" src="images/endbird.PNG" alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                          <p>
+                              My first game with Unity.
+                          </p>
+                          <p>
+                              Technology:Unity.
+                          </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="padding-right:0px !important;">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Tank online</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/HmznZGMHr3M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </div>
+                            </div>
+                          </div>
+                          <p >Game tank 2D online for 2 players.Players can send the request to another and wait for them</p>
+                            <p>
+                                Technology:Unity,socketIo,Nodejs.
+                            </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+        <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Colorful Boolean</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img style= "height:100%" class="d-block w-100" src="images/color2.png" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img style= "height:100%"  class="d-block w-100" src="images/color3.png" alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img style= "height:100%"  class="d-block w-100" src="images/color4.png" alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                          <p>
+                              Caculating correctly and move over the box has the same color.This game available on CH Play.
+                          </p>
+                          <p>
+                              Technology:Unity.
+                          </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+        <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Graduation exit exam</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/HfWPfbRoDWM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                              </div>
+                            </div>
+                          </div>
+                          <p>This website simmulates the graduation exit exam and gives you the correct score of the test</p>
+                            <p>Technology:Nodejs</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="modal fade" id="modalCaro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Caro</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img style= "height:100%" class="d-block w-100" src="images/caromenu.png" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img style= "height:100%"  class="d-block w-100" src="images/carogame1.png" alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img style= "height:100%"  class="d-block w-100" src="images/carogame2.png" alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                          <p>
+                              Using Minimax algorithm in one player mode.This game is a project at school.
+                          </p>
+                          <p>
+                              Technology:Unity.
+                          </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+
+<div class="content">
+    <div class = "container">
+
+        <section id="about" class="section section-about wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                <div class="profile">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="photo-profile">
+                                <img src="images/avatar.jpg" alt="Trinh Khang">
+                            </div>
+                            <a href="/cv" target="cv">
+                                <div class="download-resume">
+                                    <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                                    <span class="text-download">DOWNLOAD RESUME</span>
+                                </div>
+                            </a>
+                            <div class="available">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span class="text-available">available on freelance</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="info-profile">
+                                <h2><span>HI I'M</span> Trinh Ngoc Khang</h2>
+                                <h3>Web developer &amp; Game developer</h3>
+                                <p>Hello! I’m Khang. Welcome to my website.I've started and relished coding from 2016.
+                                My programming languages are : JavaScript,Java,C#,C/C++ and
+                                i'm familiar with Nodejs,Unity,Reactjs.Becoming a fullstack developer and making useful sofware for everyone are my goals.
+                                This website will show you some projects i can public and something about me.Hope you enjoy it!
+
+                                </p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="ul-info">
+                                            <li class="li-info">
+                                                <span class="title-info">Age</span>
+                                                <span class="info">21</span>
+                                            </li>
+                                            <li class="li-info">
+                                                <span class="title-info">Address</span>
+                                                <span class="info">Thanh Xuan,Ha Noi</span>
+                                            </li>
+                                            <li class="li-info">
+                                                <span class="title-info">Email</span>
+                                                <span class="info">trinhngockhang1503@gmail.com</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <ul class="ul-info">
+                                            <li class="li-info">
+                                                <span class="title-info">Phone</span>
+                                                <span class="info">+84964419119</span>
+                                            </li>
+                                            <li class="li-info">
+                                                <span class="title-info">Website</span>
+                                                <span class="info">www.khangkhang.me</span>
+                                            </li>
+                                            <li class="li-info">
+                                                <span class="title-info">Nationality</span>
+                                                <span class="info">Viet Nam</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <span class="title-links">Social Links</span>
+                                        <ul class="ul-social-links">
+                                            <li class="li-social-links">
+                                                <a href="https://www.facebook.com/khang.trinhngoc" data-tootik="Facebook" data-tootik-conf="square"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li class="li-social-links">
+                                                <a href="https://github.com/trinhngockhang" data-tootik="Github" data-tootik-conf="square"><i class="fab fa-github" aria-hidden="true"></i></a>
+                                            </li>
+
+                                            <li class="li-social-links">
+                                                    <a href="https://play.google.com/store/apps/developer?id=Khang+Khang" data-tootik="Linkedin" data-tootik-conf="square"><i class="fab fa-google-play" aria-hidden="true"></i></a>
+                                                </li>
+                                            <li class="li-social-links">
+                                                <a href="https://plus.google.com/107219708156694103005?hl=vi" data-tootik="Google Plus" data-tootik-conf="square"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="education" class="section section-education wow fadeInUp" data-wow-offset="40" style="visibility: visible; animation-name: fadeInUp;">
+            <div class="header-section">
+                <h2 class="h2-section">Game</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="education-content main">
+                        <div class="period">
+                            <h3>Pacman</h3>
+                        </div>
+                        <ul class="ul-education">
+                            <li class="li-specialty">
+                                <div class="specialty">
+                                    <span class="education-icon"><i class="fas fa-link"></i></span>
+                                    <a href="https://drive.google.com/drive/folders/1imxOkgcepeiGvyX4aUyxGIUrJRRkEVlh" ><span class="specialty-name">Link file rar</span> </a>
+                                </div>
+                            </li>
+                            <li class="li-university">
+                                <div class="university">
+                                </div>
+                            </li>
+                        </ul>
+                        <img class = "demoimage" src = "/images/pacman.png"></img>
+                        <p class="prg-education">This game is a project at school and get mark A+.It only use standard libary in java.</p>
+                        <p>Technology: Java</p>
+                        <div style="width:100%;display:inline-block;vertical-align:middle;">
+
+                                    <button class="btn-buy-now btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" >See more</button>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- / single education -->
+                <!-- single education -->
+                <div class="col-sm-4">
+                    <div class="education-content main">
+                        <div class="period">
+                            <h3>Size of brain</h3>
+                        </div>
+                        <ul class="ul-education">
+                            <li class="li-specialty">
+                                <div class="specialty">
+                                    <span class="education-icon"><i class="fas fa-link"></i></span>
+                                    <a href="http://vatcss.info/TechKidsHackathons/Web6.0/SizeOfBrain/" ><span class="specialty-name">Link online</span> </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <img class = "demoimage" src = "/images/size.PNG"></img>
+                        <p class="prg-education">It's a funny game which got second prize at Techkids web 6 mini hackathon.</p>
+                        <p>Technology: Phaser</p>
+                        <div style="width:100%;display:inline-block;vertical-align:middle;">
+
+                                    <button class="btn-buy-now btn btn-primary" data-toggle="modal" id ="button1" data-target="#exampleModalCenter1" >See more</button>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- / single education -->
+                <!-- single education -->
+                <div class="col-sm-4">
+                    <div class="education-content main">
+                        <div class="period">
+                            <h3>Drop it</h3>
+                        </div>
+                        <ul class="ul-education">
+                            <li class="li-specialty">
+                                <div class="specialty">
+                                    <span class="education-icon"><i class="fas fa-link"></i></span>
+                                    <a href="https://khanghocgioi.itch.io/drop-it" ><span class="specialty-name">Link online</span> </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <img class = "demoimage" src = "/images/bird.PNG"></img>
+                        <p class="prg-education">Dropping egg to the nest to save it.This game is my first game with unity.</p>
+                        <p>
+                            Technology:Unity.
+                        </p>
+                        <div style="width:100%;display:inline-block;vertical-align:middle;">
+                                <button class="btn-buy-now btn btn-primary" data-toggle="modal" id ="button1" data-target="#exampleModalCenter2" >See more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                        <div class="education-content main">
+                            <div class="period">
+                                <h3>Tank online</h3>
+                            </div>
+                            <ul class="ul-education">
+                                <li class="li-specialty">
+                                    <div class="specialty">
+                                        <span class="education-icon"><i class="fas fa-link"></i></span>
+                                        <a href="https://khanghocgioi.itch.io/tank-online" ><span class="specialty-name">Link download</span> </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <img class = "demoimage" src = "/images/tank.PNG"></img>
+                            <p class="prg-education">Game tank 2D online for 2 players.Players can send the request to another and wait for them</p>
+                            <p>
+                                Technology:Unity,socketIo,Nodejs.
+                            </p>
+                            <div style="width:100%;display:inline-block;vertical-align:middle;margin-top:9%">
+                                    <button class="btn-buy-now btn btn-primary" data-toggle="modal" id ="button1" data-target="#exampleModalCenter3" >See more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                            <div class="education-content main">
+                                <div class="period">
+                                    <h3>Colorful boolean</h3>
+                                </div>
+                                <ul class="ul-education">
+                                    <li class="li-specialty">
+                                        <div class="specialty">
+                                            <span class="education-icon"><i class="fas fa-link"></i></span>
+                                            <a href="https://play.google.com/store/apps/details?id=com.KhangKhang.MathSwitch" ><span class="specialty-name">Link CH play</span> </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <img class = "demoimage" src = "/images/color.PNG"></img>
+                                <p class="prg-education">Caculating correctly and move over the box has the same color.This game available on CH Play.</p>
+                                <p>Technology: Unity</p>
+                                <div style="width:100%;display:inline-block;vertical-align:middle;">
+                                        <button class="btn-buy-now btn btn-primary" data-toggle="modal" id ="button1" data-target="#exampleModalCenter4" >See more</button>
+                                </div>
+                            </div>
+                        </div>
+                <div class="col-sm-4">
+                  <div class="education-content main">
+                      <div class="period">
+                          <h3>Caro</h3>
+
+                          <ul class="ul-education">
+                            <li class="li-specialty">
+                              <div class="specialty">
+                                <span class="education-icon"><i class="fas fa-link"></i></span>
+                                <a href="https://play.google.com/store/apps/details?id=com.Khang.Khangkhang" ><span class="specialty-name">Link CH Play</span> </a>
+                              </div>
+                            </li>
+                            <li class="li-university">
+                              <div class="university">
+                              </div>
+                            </li>
+                          </ul>
+                          <img class = "demoimage" src = "/images/iconcaro.jpg"></img>
+                          <p class="prg-education">Using Minimax algorithm in one player mode.This game is a project at school.</p>
+                          <p>Technology: Unity</p>
+                          <div style="width:100%;display:inline-block;vertical-align:middle;margin-top:9%">
+
+                            <button class="btn-buy-now btn btn-primary" data-toggle="modal" data-target="#modalCaro" >See more</button>
+
+
+                          </div>
+                        </div>
+                      </div>
+                <!-- / single education -->
+                <div class="clearfix"></div>
+
+                <div class="clearfix"></div>
+            </div>
+        </section>
+
+        <section id="education" class="section section-education wow fadeInUp" data-wow-offset="40" style="visibility: visible; animation-name: fadeInUp;">
+                <div class="header-section">
+                    <h2 class="h2-section">Web</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="education-content main">
+                            <div class="period">
+                                <h3>Graduation exit exam</h3>
+                            </div>
+                            <ul class="ul-education">
+                                <li class="li-specialty">
+                                    <div class="specialty">
+                                        <span class="education-icon"><i class="fas fa-link"></i></span>
+                                        <a href="luyenthidaihoc.herokuapp.com" ><span class="specialty-name">luyenthidaihoc.herokuapp.com</span> </a>
+
+                                    </div>
+                                </li>
+                                <li class="li-university">
+                                    <div class="university">
+                                    </div>
+                                </li>
+                            </ul>
+                            <img class = "demoimage" src = "/images/luyenthi.PNG"></img>
+                            <p class="prg-education">This website simmulates the graduation exit exam and gives you the correct score of the test</p>
+                            <p>Technology:Nodejs</p>
+                            <div style="width:100%;display:inline-block;vertical-align:middle;">
+                                    <button class="btn-buy-now btn btn-primary" data-toggle="modal" id ="button1" data-target="#exampleModalCenter5" >See more</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="education-content main">
+                            <div class="period">
+                                <h3>Phone Store Management</h3>
+                            </div>
+                            <ul class="ul-education">
+                                <li class="li-specialty">
+                                    <div class="specialty">
+                                        <span class="education-icon"><i class="fas fa-link"></i></span>
+                                        <a href="http://209.97.171.202:6969" ><span class="specialty-name">http://209.97.171.202:6969</span> </a>
+
+                                    </div>
+                                </li>
+                                <li class="li-university">
+                                    <div class="university">
+                                    </div>
+                                </li>
+                            </ul>
+                            <img class = "demoimage" src = "/images/homeDb.png">This web has many functions to manage a phone store :statistic,save information,change database,...</img>
+                            <p class="prg-education"></p>
+                            <p>Technology:Nodejs</p>
+                            <div style="width:100%;display:inline-block;vertical-align:middle;">
+                                    <button class="btn-buy-now btn btn-primary" data-toggle="modal" id ="button1" data-target="#Dbmodal" >See more</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="education-content main">
+                            <div class="period">
+                                <h3>Hoang Quy web</h3>
+                            </div>
+                            <ul class="ul-education">
+                                <li class="li-specialty">
+                                    <div class="specialty">
+                                        <span class="education-icon"><i class="fas fa-link"></i></span>
+                                        <a href="http://maichehoangquy.com/" ><span class="specialty-name">maichehoangquy.com</span> </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <img class = "demoimage" src = "/images/hoangquy.PNG"></img>
+                            <p class="prg-education">This website illustrates Hoang Quy company's products and sorts by the category.</p>
+                            <p>Technology:WordPress</p>
+                            <div style="width:100%;display:inline-block;vertical-align:middle;margin-top:9%">
+                                        <!-- <button class="btn-buy-now" >See more</button> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / single education -->
+                    <!-- single education -->
+                    <div class="col-sm-4">
+                        <div class="education-content main">
+                            <div class="period">
+                                <h3>MH Stone web</h3>
+                            </div>
+                            <ul class="ul-education">
+                                <li class="li-specialty">
+                                    <div class="specialty">
+                                        <span class="education-icon"><i class="fas fa-link"></i></span>
+                                        <a href="https://mhstone.herokuapp.com/" ><span class="specialty-name">MH stone</span> </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <img class = "demoimage" src = "/images/mhstone.PNG"></img>
+                            <p class="prg-education">This website demonstrates MH company's items and sorts by the type . </p>
+                            <p>Technology:Nodejs,Reactjs</p>
+                            <div style="width:100%;display:inline-block;vertical-align:middle;margin-top:9%">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / single education -->
+                    <div class="clearfix"></div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+
+            <section id="education" class="section section-education wow fadeInUp" data-wow-offset="40" style="visibility: visible; animation-name: fadeInUp;">
+                <div class="header-section">
+                    <h2 class="h2-section">Other</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="education-content main">
+                            <div class="period">
+                                <h3>Get id FB group</h3>
+                            </div>
+                            <ul class="ul-education">
+                                <li class="li-specialty">
+                                    <div class="specialty">
+                                        <span class="education-icon"><i class="fas fa-link"></i></span>
+                                        <a href="https://github.com/trinhngockhang/toolgetIdgroup" ><span class="specialty-name">Link Github</span> </a>
+
+                                    </div>
+                                </li>
+                                <li class="li-university">
+                                    <div class="university">
+                                    </div>
+                                </li>
+                            </ul>
+                            <img class = "demoimage" src = "/images/tool.png"></img>
+                            <p class="prg-education">A tool enable you to get all id of Facebook group's members,it can be useful in marketing</p>
+                            <p>Type:Tool</p>
+                            <p>Technology:Nodejs</p>
+                            <div style="width:100%;display:inline-block;vertical-align:middle;">
+                                        <!-- <button class="btn-buy-now" >See more</button> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="education-content main">
+                            <div class="period">
+                                <h3>Basic task manager</h3>
+                            </div>
+                            <ul class="ul-education">
+                                <li class="li-specialty">
+                                    <div class="specialty">
+                                        <span class="education-icon"><i class="fas fa-link"></i></span>
+                                        <a href="https://github.com/trinhngockhang/task-manager" ><span class="specialty-name">Link Github</span> </a>
+
+                                    </div>
+                                </li>
+                                <li class="li-university">
+                                    <div class="university">
+                                    </div>
+                                </li>
+                            </ul>
+                            <img class = "demoimage" src = "/images/taskmn.png"></img>
+                            <p class="prg-education">A desktop application with basic function of a task manager for window</p>
+                            <p>Type:Desktop app</p>
+                            <p>Technology:C#</p>
+                            <div style="width:100%;display:inline-block;vertical-align:middle;">
+                                        <!-- <button class="btn-buy-now" >See more</button> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="education-content main">
+                            <div class="period">
+                                <h3>English Listening</h3>
+                            </div>
+                            <ul class="ul-education">
+                                <li class="li-specialty">
+                                    <div class="specialty">
+                                        <span class="education-icon"><i class="fas fa-link"></i></span>
+                                        <a href="https://github.com/trinhngockhang/OOP-Mid-Term" ><span class="specialty-name">Link Github</span> </a>
+
+                                    </div>
+                                </li>
+                                <li class="li-university">
+                                    <div class="university">
+                                    </div>
+                                </li>
+                            </ul>
+                            <img class = "demoimage" src = "/images/menuLis.png"></img>
+                            <p class="prg-education">This app can test your english listening skill</p>
+                            <p>Type:Desktop app</p>
+                            <p>Technology:Java</p>
+                            <div style="width:100%;display:inline-block;vertical-align:middle;margin-top:9%">
+                                        <button class="btn-buy-now" data-toggle="modal" id ="button1" data-target="#Lismodal">See more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+   </div>
+
+
+
+</div>
+</body>
+</h
