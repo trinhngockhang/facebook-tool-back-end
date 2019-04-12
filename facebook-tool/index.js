@@ -7,7 +7,7 @@ const bodyParser = require ('body-parser');
 app.set("view engine","ejs");
 app.set("vỉews","./views");
 app.use(express.static(__dirname + '/public'));
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 8000;
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({
   extended: true,
